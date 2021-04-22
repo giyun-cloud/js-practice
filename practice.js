@@ -46,32 +46,41 @@
   // console.log(b instanceof Object)
 }
 {//객체연습
-  const numberSum = {
-    _a : 1,
-    _b : 2,
-    sum : 3,
-    caculation () {
-      console.log('caculation');
-      this.sum = this._a + this._b
-    },
-    get a() {
-      return this._a
-    },
-    get b() {
-      return this._b
-    },
-    set a(value) {
-      this._a = value;
-      this.caculation()
-    },
-    set b(value) {
-      this._b = value;
-      this.caculation()
-    }
+  // const numberSum = {
+  //   _a : 1,
+  //   _b : 2,
+  //   sum : 3,
+  //   caculation () {
+  //     console.log('caculation');
+  //     this.sum = this._a + this._b
+  //   },
+  //   get a() {
+  //     return this._a
+  //   },
+  //   get b() {
+  //     return this._b
+  //   },
+  //   set a(value) {
+  //     this._a = value;
+  //     this.caculation()
+  //   },
+  //   set b(value) {
+  //     this._b = value;
+  //     this.caculation()
+  //   }
+  // }
+  // console.log(numberSum.sum)
+  // numberSum.a = 10
+  // console.log(numberSum.sum)
+  // numberSum.b = 12
+  // console.log(numberSum.sum)
+}
+{//비구조할당
+  const obj = {goku:3000, vegeta: 2500, picolo: 1000}
+  const {goku, picolo, vegeta} = obj
+  console.log(goku,picolo,vegeta)
+  function power({goku,picolo,vegeta}) {
+    console.log(goku,picolo,vegeta)
   }
-  console.log(numberSum.sum)
-  numberSum.a = 10
-  console.log(numberSum.sum)
-  numberSum.b = 12
-  console.log(numberSum.sum)
+  power(obj)
 }
