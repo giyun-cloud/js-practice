@@ -45,6 +45,7 @@
   // console.log(b instanceof A)
   // console.log(b instanceof Object)
 }
+
 {//객체연습
   // const numberSum = {
   //   _a : 1,
@@ -75,12 +76,55 @@
   // numberSum.b = 12
   // console.log(numberSum.sum)
 }
+
 {//비구조할당
-  const obj = {goku:3000, vegeta: 2500, picolo: 1000}
-  const {goku, picolo, vegeta} = obj
-  console.log(goku,picolo,vegeta)
-  function power({goku,picolo,vegeta}) {
-    console.log(goku,picolo,vegeta)
-  }
-  power(obj)
+  // const obj = {goku:3000, vegeta: 2500, picolo: 1000}
+  // const {goku, picolo, vegeta} = obj
+  // console.log(goku,picolo,vegeta)
+  // const obj2 = {
+  //   goku,
+  //   picolo,
+  //   vegeta
+  // }
+  // console.log("obj2: ", obj2)
+  // function power({goku,picolo,vegeta}) {
+  //   console.log(goku,picolo,vegeta)
+  // }
+  // power(obj)
+
+  // const a = 100;const b = 100; const c =200;
+  // const obj3 = {
+  //   a,
+  //   b,
+  //   c
+  // }
+  // console.log(obj3)
+}
+
+{//배열 내장객체
+  // const array1 = [1,2,3,4,5]
+  // const sumarray = array1.reduce((a,b) => a+b,0)
+  // console.log(sumarray)
+}
+
+//인자개수에 상관없이 곱셈 해주는 함수
+{
+
+  // function multiplication(...numbers) {
+  //   return numbers.reduce((acc,num) => acc * num,1)
+  // }
+  // console.log(multiplication(12,12,2))
+
+  // function average(...numbers) {
+  //   return numbers.reduce((acc,num) => acc + num, 0) / numbers.length
+  // }
+  // console.log(average(100,80,90,50,70))
+}
+
+
+//연습장
+{
+
+  
+
 }
